@@ -11,6 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Repositories\UsuarioService - Cópia.cs" />
+    <Compile Remove="Services\DisciplinaServices.cs" />
+    <Compile Remove="Services\UsuarioService - Cópia.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include=".template.config\template.json" />
   </ItemGroup>
 

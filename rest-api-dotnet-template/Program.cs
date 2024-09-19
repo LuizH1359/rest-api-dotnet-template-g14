@@ -76,11 +76,11 @@ namespace rest_api_dotnet_template
             app.MapControllers();
 
             // EXECUTA OS MIGFRATIONS NO BANCO DE DADOS
-            using (var scope = app.Services.CreateScope())
-            {
-                var dbContext = scope.ServiceProvider.GetRequiredService<ApiDbContext>();
-                dbContext.Database.Migrate();
-            }
+            //using (var scope = app.Services.CreateScope())
+            //{
+            //    var dbContext = scope.ServiceProvider.GetRequiredService<ApiDbContext>();
+            //    dbContext.Database.Migrate();
+            //}
 
             app.Run();
         }

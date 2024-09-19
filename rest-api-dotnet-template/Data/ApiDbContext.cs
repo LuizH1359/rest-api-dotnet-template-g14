@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using rest_api_dotnet_template.Models;
+using rest_api_dotnet_template.Models;
 
 namespace rest_api_dotnet_template.Data
 {
@@ -15,5 +16,7 @@ namespace rest_api_dotnet_template.Data
         }
 
         public DbSet<Usuario> Usuarios { get; set; }
+
+        public DbSet<Disciplina> Disciplinas { get; set; }
     }
 }

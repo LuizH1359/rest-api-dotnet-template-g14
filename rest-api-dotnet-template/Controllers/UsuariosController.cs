@@ -39,7 +39,7 @@ namespace rest_api_dotnet_template.Controllers
         public override async Task<ActionResult> Create([FromBody] Usuario entity)
         {            
             entity.Senha = BC.HashPassword(entity.Senha);
-            entity.Perfil = UsuarioPerfil.Administrador;
+           // entity.Perfil = UsuarioPerfil.Administrador;
             return await base.Create(entity);
         }
 
@@ -72,7 +72,7 @@ namespace rest_api_dotnet_template.Controllers
             {
                 var entity = _mapper.Map<Usuario>(usuario);
                 entity.Senha = BC.HashPassword(entity.Senha);
-                entity.Perfil = UsuarioPerfil.Cliente;
+              //  entity.Perfil = UsuarioPerfil.Cliente;
                 await _userService.RegisterAsync(entity);
                 return CreatedAtAction(nameof(GetById), new { id = entity.Id }, entity);
             }

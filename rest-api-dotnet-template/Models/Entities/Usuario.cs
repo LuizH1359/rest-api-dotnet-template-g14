@@ -20,20 +20,20 @@ namespace rest_api_dotnet_template.Models
         [MinLength(8, ErrorMessage = "A senha deve ter pelo menos 8 caracteres.")]
         public string Senha { get; set; } 
 
-        [Required(ErrorMessage = "O perfil de usuário é obrigatório.")]
-        public UsuarioPerfil Perfil { get; set; }
+        //[Required(ErrorMessage = "O perfil de usuário é obrigatório.")]
+        //public UsuarioPerfil Perfil { get; set; }
 
-        public string PerfilDescricao
-        {
-            get { return Perfil.ToString(); }
-        }
+        //public string PerfilDescricao
+        //{
+        //    get { return Perfil.ToString(); }
+        //}
     }
 
-    public enum UsuarioPerfil
-    {
-        [Display(Name = "Administrador")]
-        Administrador,
-        [Display(Name = "Cliente")]
-        Cliente
-    }
+    //public enum UsuarioPerfil
+    //{
+    //    [Display(Name = "Administrador")]
+    //    Administrador,
+    //    [Display(Name = "Cliente")]
+    //    Cliente
+    //}
 }

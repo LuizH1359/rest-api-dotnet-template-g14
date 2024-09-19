@@ -16,7 +16,7 @@ namespace rest_api_dotnet_template.Data
                     Id = 1,
                     Nome = "Administrator",
                     Email = "admin@email.com.br",
-                    Perfil = UsuarioPerfil.Administrador,
+                    //Perfil = UsuarioPerfil.Administrador,
                     Senha = BC.HashPassword("pucminas")
                 },
                 new Usuario
@@ -24,7 +24,7 @@ namespace rest_api_dotnet_template.Data
                     Id = 2,
                     Nome = "Cliente",
                     Email = "cliente@email.com.br",
-                    Perfil = UsuarioPerfil.Cliente,
+                 //   Perfil = UsuarioPerfil.Cliente,
                     Senha = BC.HashPassword("pucminas")
                 }
             );
